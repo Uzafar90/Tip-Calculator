@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Tip Calculator</title>
+	</head>
+	<body>
+		<div class="tc__main">
+			<h1>T<span>ip</span> C<span>alculator</span></h1>
+			<div class="tc__container">
+				<div class="tc__left-side">
+					<div class="align">
+						<label for="">Bill</label>
+						<input type="number" class="bill-value" id="bill-value" />
+					</div>
+					<div class="align">
+						<label for="">Tip</label>
+						<input type="number" class="tip-value" id="tip-value" />
+					</div>
+					<div class="align">
+						<label for="">split</label>
+						<input type="number" class="people-value" id="people-value" />
+					</div>
+				</div>
+				<div class="tc__right-side">
+					<div class="tc__wrapper">
+						<div class="tc_amount">
+							<div class="text">
+								<p>
+									tip <br />
+									<span>per person</span>
+								</p>
+							</div>
+							<div class="amount" id="tip-amount"></div>
+						</div>
+						<div class="tc_amount">
+							<div class="text">
+								<p>
+									bill <br />
+									<span>per person</span>
+								</p>
+							</div>
+							<div class="amount" id="total-amount"></div>
+						</div>
+						<div class="tc__btn">
+							<button class="reset" id="calculate">Calc</button>
+							<button class="reset" id="reset">reset</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="error" id="error">Please enter the valid entry !!!</span>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
